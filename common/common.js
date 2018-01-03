@@ -3,7 +3,7 @@ angular.module('common', [])
         return {
             link: function($scope, element, attribute) {
                 // console.log('123');
-                console.log(attribute);
+                // console.log(attribute);
                 element.on('error', function() {
                     element.attr('src', attribute.myError)
                 })

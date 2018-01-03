@@ -1,16 +1,10 @@
-var routerApp = angular.module('my-router', ['ui.router', 'in_theaters', 'homeCT']);
+var routerApp = angular.module('my-router', ['ui.router', 'movie_list', 'homeCT', ]);
 routerApp.config(['$stateProvider', function(stateProvider) {
     stateProvider.state({
         name: "home",
         url: "/home",
         templateUrl: "./home/home.html",
         controller: "homeCtrl"
-    })
-    stateProvider.state({
-        name: "comming_soon",
-        url: "/comming_soon",
-        templateUrl: "./comming_soon/comming_soon.html",
-        // controller:""
     })
     stateProvider.state({
         name: "top250",
@@ -20,9 +14,8 @@ routerApp.config(['$stateProvider', function(stateProvider) {
     })
     stateProvider.state({
         name: "in_theaters",
-        // url: "/in_theaters",//路径跳转格式
-        url: "/in_theaters/:page",
-        templateUrl: "./in_theaters/in_theaters.html",
-        controller: "in_theatersCtrl"
+        url: "/:movie_list/:page",
+        templateUrl: "./movie_list/movie_list.html",
+        controller: "movie_listCtrl"
     })
 }])
