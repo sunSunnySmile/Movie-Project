@@ -1,5 +1,5 @@
 // 1.定义模块
-var in_theaters = angular.module('in_theaters', [])
+var in_theaters = angular.module('in_theaters', ['common'])
     // 2.定义控制器--内置发送请求的$http---和原来Ajax发送请求一样
 in_theaters.controller('in_theatersCtrl', [
     '$scope',
