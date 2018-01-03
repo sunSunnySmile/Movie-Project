@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>index.html</title>
+</head>
+
+<body ng-app="myApp">
+    <ui-view></ui-view>
+</body>
+
+</html>
+<script src="./node_modules/angular/angular.js"></script>
+<script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="./router.js"></script>
+<script>
+    angular.module('myApp', ['my-router'])
+</script>
