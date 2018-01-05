@@ -14,7 +14,7 @@ angular.module('myActive', [])
                         // console.log(tempHash);
                         // console.log(link.parent());
                     element.removeClass(attribute.myActive)
-                    console.log(attribute);
+                    // console.log(attribute);
                     if (url === tempHash) {
                         // link.parent().addClass(attribute.active)
                         link.parent().addClass(attribute.myActive)

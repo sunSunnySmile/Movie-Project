@@ -9,7 +9,7 @@
                 <h4><span>{{item.title}}</span> <em>{{item.rating.average}}分</em></h4>
                 <!-- <div class="otherinfo">类型:<span ng-repeat="sub_item in item.genres">{{sub_item}}</span></div> -->
                 <!-- 方法2 -->
-                <div class="otherinfo">类型:<span>{{sub_item.join("、 ")}}</span></div>
+                <div class="otherinfo">类型:<span>{{item.genres.join("、 ")}}</span></div>
             </div>
         </li>
     </ul>
