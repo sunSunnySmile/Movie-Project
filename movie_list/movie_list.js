@@ -7,7 +7,7 @@ movie_list.controller('movie_listCtrl', [
     '$stateParams',
     function($scope, $http, $stateParams) {
         // console.log($stateParams.page);
-        console.log($stateParams);
+        // console.log($stateParams);
         var page = $stateParams.page;
         var movie_list = $stateParams.movie_list
             // 定义一个变量值控制上一页的disable属性为true/false

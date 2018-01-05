@@ -21,10 +21,18 @@
         <nav class="nav">
             <ul>
                 <!--li中添加 active 类样式，显示焦点状态。-->
-                <li class="active"><a href="#/home_page">首页</a></li>
-                <li><a href="#/in_theaters">正在热映</a></li>
-                <li><a href="#/coming_soon">即将上映</a></li>
-                <li><a href="#/top250">Top250</a></li>
+                <li my-Active="active">
+                    <a href="#!/home">首页</a>
+                </li>
+                <li my-Active="active">
+                    <a href="#!/in_theaters/1">正在热映</a>
+                </li>
+                <li my-Active="active">
+                    <a href="#!/coming_soon/1">即将上映</a>
+                </li>
+                <li my-Active="active">
+                    <a href="#!/top250/1">Top250</a>
+                </li>
 
             </ul>
         </nav>
@@ -46,6 +54,7 @@
 <script src="./movie_list/movie_list.js"></script>
 <script src="./home/home.js"></script>
 <script src="./common/common.js"></script>
+<script src="./common/myActive.js"></script>
 <script>
-    angular.module('myApp', ['my-router'])
+    angular.module('myApp', ['my-router', 'myActive'])
 </script>
